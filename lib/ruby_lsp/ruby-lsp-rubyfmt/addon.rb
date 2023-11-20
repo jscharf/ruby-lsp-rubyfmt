@@ -31,7 +31,7 @@ module RubyLsp
       # The main part of the interface is implementing the run method. It receives the URI and the document being formatted.
       # IMPORTANT: This method must return the formatted document source without mutating the original one in document
       def run(uri, document)
-        `echo "class MyClass; end" | rubyfmt`
+        `echo "#{document.source}" | rubyfmt`
       end
     end
   end
