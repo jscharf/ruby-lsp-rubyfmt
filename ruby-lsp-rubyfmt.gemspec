@@ -35,8 +35,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 2.4.21"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "minitest", "~> 5.0"
+  # spec.add_dependency("language_server-protocol", "~> 3.17.0")
+  # spec.add_dependency("prism", ">= 0.17.1", "< 0.18")
+  spec.add_dependency("sorbet-runtime", ">= 0.5.5685")
   spec.add_dependency("ruby-lsp", ">= 0.12.0", "< 0.13.0")
 end
