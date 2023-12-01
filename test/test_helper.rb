@@ -1,4 +1,7 @@
-$LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
+# typed: false
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift(File.expand_path("../../lib", __FILE__))
 require "ruby_lsp/internal"
 require "ruby_lsp/ruby-lsp-rubyfmt/addon"
 
