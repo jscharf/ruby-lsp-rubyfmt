@@ -1,3 +1,5 @@
+require "open3"
+
 module RubyLsp
   module RubyLspRubyfmt
     class Addon < RubyLsp::Addon
@@ -31,7 +33,8 @@ module RubyLsp
       # The main part of the interface is implementing the run method. It receives the URI and the document being formatted.
       # IMPORTANT: This method must return the formatted document source without mutating the original one in document
       def run(uri, document)
-        `echo "#{document.source}" | rubyfmt`
+        output, _status = Open3.capture2("rubyfmt", stdin_data: document.source)
+        output
       end
     end
   end
