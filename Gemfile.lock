@@ -2,15 +2,24 @@ PATH
   remote: .
   specs:
     ruby-lsp-rubyfmt (0.1.0)
+      ruby-lsp (>= 0.12.0, < 0.13.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    language_server-protocol (3.17.0.3)
     minitest (5.20.0)
+    prism (0.17.1)
     rake (10.5.0)
+    ruby-lsp (0.12.5)
+      language_server-protocol (~> 3.17.0)
+      prism (>= 0.17.1, < 0.18)
+      sorbet-runtime (>= 0.5.5685)
+    sorbet-runtime (0.5.11144)
 
 PLATFORMS
   arm64-darwin-22
+  arm64-darwin-23
 
 DEPENDENCIES
   bundler (~> 2.4.21)
