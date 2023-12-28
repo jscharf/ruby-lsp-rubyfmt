@@ -28,7 +28,7 @@ GEM
       minitest (>= 5.0)
       ruby-progressbar
     netrc (0.11.0)
-    parallel (1.23.0)
+    parallel (1.24.0)
     parser (3.2.2.4)
       ast (~> 2.4.1)
       racc
@@ -74,13 +74,13 @@ GEM
       prism (>= 0.17.1, < 0.18)
       sorbet-runtime (>= 0.5.5685)
     ruby-progressbar (1.13.0)
-    sorbet (0.5.11144)
-      sorbet-static (= 0.5.11144)
-    sorbet-runtime (0.5.11144)
-    sorbet-static (0.5.11144-universal-darwin)
-    sorbet-static-and-runtime (0.5.11144)
-      sorbet (= 0.5.11144)
-      sorbet-runtime (= 0.5.11144)
+    sorbet (0.5.11164)
+      sorbet-static (= 0.5.11164)
+    sorbet-runtime (0.5.11164)
+    sorbet-static (0.5.11164-universal-darwin)
+    sorbet-static-and-runtime (0.5.11164)
+      sorbet (= 0.5.11164)
+      sorbet-runtime (= 0.5.11164)
     spoom (1.2.4)
       erubi (>= 1.10.0)
       sorbet-static-and-runtime (>= 0.5.10187)
@@ -89,7 +89,7 @@ GEM
     stringio (3.1.0)
     syntax_tree (6.2.0)
       prettier_print (>= 1.2.0)
-    tapioca (0.11.12)
+    tapioca (0.11.14)
       bundler (>= 2.2.25)
       netrc (>= 0.11.0)
       parallel (>= 1.21.0)
@@ -123,7 +123,7 @@ DEPENDENCIES
   rubocop-sorbet (~> 0.7)
   ruby-lsp-rubyfmt!
   sorbet-static-and-runtime
-  tapioca (~> 0.11)
+  tapioca
 
 BUNDLED WITH
    2.4.21
