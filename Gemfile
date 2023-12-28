@@ -23,5 +23,5 @@ group :development do
   gem "rubocop-rake", "~> 0.6.0", require: false
   gem "rubocop-sorbet", "~> 0.7", require: false
   gem "sorbet-static-and-runtime", platforms: NON_WINDOWS_PLATFORMS
-  gem "tapioca", "~> 0.11", require: false, platforms: NON_WINDOWS_PLATFORMS
+  gem "tapioca", require: false, platforms: NON_WINDOWS_PLATFORMS
 end
