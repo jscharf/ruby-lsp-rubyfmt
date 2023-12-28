@@ -5,44 +5,14 @@ require:
   - rubocop-sorbet
   - rubocop-minitest
   - rubocop-rake
-  # - ./lib/rubocop/cop/ruby_lsp/use_language_server_aliases
-  # - ./lib/rubocop/cop/ruby_lsp/use_register_with_handler_method
 
 AllCops:
   NewCops: disable
   SuggestExtensions: false
   TargetRubyVersion: 3.2
-  # Exclude:
-  #   - "vendor/**/*"
-  #   - "features/**/*"
-    # - "test/fixtures/**/*"
-    # - "test/expectations/**/*"
 
 Naming/FileName:
   Enabled: true
-
-# RubyLsp/UseLanguageServerAliases:
-#   Exclude:
-#     - "test/**/*.rb"
-
-# Sorbet/FalseSigil:
-#   Enabled: false
-
-# Sorbet/TrueSigil:
-#   Enabled: true
-#   Include:
-#     - "test/**/*.rb"
-#   Exclude:
-#     - "**/*.rake"
-#     - "lib/**/*.rb"
-
-# Sorbet/StrictSigil:
-#   Enabled: true
-#   Include:
-#     - "lib/**/*.rb"
-#   Exclude:
-#     - "**/*.rake"
-#     - "test/**/*.rb"
 
 Style/StderrPuts:
   Enabled: true

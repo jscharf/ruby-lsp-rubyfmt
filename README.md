@@ -1,9 +1,5 @@
 # Ruby::Lsp::Rubyfmt
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruby/lsp/rubyfmt`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -20,9 +16,35 @@ Or install it yourself as:
 
     $ gem install ruby-lsp-rubyfmt
 
+## Dependency
+
+To use this Ruby LSP Addon, you need to have [`rubyfmt`](https://github.com/fables-tales/rubyfmt) installed as it's an external dependency.
+
+This addon calls the `rubyfmt` executable in `addon.rb`
+
+If you already have homebrew installed, you can install `rubyfmt` by running the following
+
+```
+brew install rubyfmt
+```
+
+If you don't, go to https://brew.sh and install it on your machine.
+
+Check if the installation was successfully by running the following
+```
+rubyfmt --version
+```
+
+If it was successful, you should see a version number printed.
+
 ## Usage
 
-TODO: Write usage instructions here
+To use this addon, you need to modify the VS code setting `rubyLsp.formatter` in `settings.json`
+```
+"rubyLsp.formatter": "rubyfmt"
+```
+
+After that, open the VS code command pallete and select the option `Developer: Reload Window`.
 
 ## Development
 
