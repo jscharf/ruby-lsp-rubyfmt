@@ -19,10 +19,10 @@ permissions:
 jobs:
   test:
 
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     strategy:
       matrix:
-        ruby-version: ['3.0', '3.1', '3.2']
+        ruby-version: ['3.0', '3.1', '3.2', '3.3']
 
     steps:
     - uses: actions/checkout@v3
@@ -34,5 +34,10 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - name: Set up Homebrew
+      id: set-up-homebrew
+      uses: Homebrew/actions/setup-homebrew@master
+    - name: Set up rubyfmt
+      run: brew install rubyfmt
     - name: Run tests
       run: bundle exec rake test
