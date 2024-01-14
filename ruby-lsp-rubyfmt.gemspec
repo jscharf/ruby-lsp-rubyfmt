@@ -8,21 +8,21 @@ Gem::Specification.new do |spec|
   spec.name = "ruby-lsp-rubyfmt"
   spec.version = Ruby::Lsp::Rubyfmt::VERSION
   spec.authors = ["Joshua Scharf"]
-  spec.email = ["joshua.scharf@fullscript.com"]
+  spec.email = ["joshua@scharf.dev"]
 
-  spec.summary = "My short summery"
-  spec.description = "My description"
+  spec.summary = "Ruby LSP rubyfmt"
+  spec.description = "An addon for the Ruby LSP that enables formatting with rubyfmt"
   spec.homepage = "http://mygemserver.com"
   spec.license = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "http://fullscript.com"
+    spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "http://fullscript.com"
-    spec.metadata["changelog_uri"] = "http://fullscript.com"
+    spec.metadata["source_code_uri"] = "https://github.com/jscharf/ruby-lsp-rubyfmt"
+    spec.metadata["changelog_uri"] = "https://github.com/jscharf/ruby-lsp-rubyfmt"
   else
     raise(
       "RubyGems 2.0 or newer is required to protect against " \
@@ -40,6 +40,6 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency("ruby-lsp", ">= 0.12.0", "< 0.13.0")
+  spec.add_dependency("ruby-lsp", ">= 0.12.0")
   spec.add_dependency("sorbet-runtime", ">= 0.5.5685")
 end
