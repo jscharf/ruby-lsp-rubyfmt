@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Ruby LSP rubyfmt"
   spec.description = "An addon for the Ruby LSP that enables formatting with rubyfmt"
-  spec.homepage = "http://mygemserver.com"
+  spec.homepage = "https://github.com/jscharf/ruby-lsp-rubyfmt"
   spec.license = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
